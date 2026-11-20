@@ -1,0 +1,1522 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>杏吧鸠摩智探花视频_影像社区_原创精品内容平台</title>
+<meta name="description" content="杏吧鸠摩智探花视频官方网站，深耕短视频内容生态，汇聚原创创作者与精品影像，为观众与创作者搭建值得信赖的内容社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c2410c'/%3E%3Cpath d='M22 19v26l22-13z' fill='%23fff7ed'/%3E%3Ccircle cx='47' cy='17' r='5' fill='%23fbbf24'/%3E%3C/svg%3E">
+<style>
+:root{
+  --xbj-primary:#c2410c;
+  --xbj-primary-deep:#9a3412;
+  --xbj-amber:#f59e0b;
+  --xbj-cream:#fdf8f1;
+  --xbj-cream-2:#f7ecdd;
+  --xbj-ink:#2b2118;
+  --xbj-ink-soft:#6b5d4f;
+  --xbj-line:#e7d9c6;
+  --xbj-card:#ffffff;
+  --xbj-shadow:0 8px 24px rgba(120,72,20,.10);
+  --xbj-radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--xbj-cream);
+  color:var(--xbj-ink);
+  line-height:1.75;
+  font-size:16px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+
+/* ============ 吸顶区 ============ */
+.xbj-sticky-head{
+  position:sticky;top:0;z-index:120;
+}
+.xbj-notice-bar{
+  background:linear-gradient(90deg,var(--xbj-primary-deep),var(--xbj-primary) 55%,#d97706);
+  color:#fff7ed;
+  font-size:13px;
+  padding:7px 16px;
+  display:flex;align-items:center;gap:10px;justify-content:center;
+  text-align:center;flex-wrap:wrap;
+}
+.xbj-notice-bar .xbj-notice-tag{
+  background:#fff7ed;color:var(--xbj-primary-deep);
+  font-weight:700;font-size:11px;letter-spacing:1px;
+  padding:1px 8px;border-radius:20px;flex-shrink:0;
+}
+.xbj-notice-marquee{
+  overflow:hidden;max-width:100%;white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.xbj-notice-marquee a{text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+.xbj-header{
+  background:rgba(253,248,241,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--xbj-line);
+  box-shadow:0 2px 12px rgba(120,72,20,.06);
+}
+.xbj-header-inner{
+  max-width:1200px;margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;gap:18px;height:66px;
+}
+.xbj-logo{
+  display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px;
+  color:var(--xbj-primary-deep);flex-shrink:0;
+}
+.xbj-logo-mark{
+  width:36px;height:36px;border-radius:11px;
+  background:linear-gradient(135deg,var(--xbj-primary),var(--xbj-amber));
+  display:grid;place-items:center;color:#fff;font-size:16px;
+  box-shadow:0 4px 10px rgba(194,65,12,.35);
+}
+.xbj-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:8px}
+.xbj-nav a{
+  font-size:14.5px;padding:7px 12px;border-radius:10px;color:var(--xbj-ink-soft);
+  transition:.2s;font-weight:500;
+}
+.xbj-nav a:hover,.xbj-nav a.xbj-nav-active{background:var(--xbj-cream-2);color:var(--xbj-primary-deep)}
+.xbj-head-actions{margin-left:auto;display:flex;align-items:center;gap:10px}
+.xbj-search{position:relative;display:flex;align-items:center}
+.xbj-search input{
+  width:200px;height:38px;border-radius:22px;border:1px solid var(--xbj-line);
+  background:#fff;padding:0 40px 0 16px;font-size:13.5px;color:var(--xbj-ink);outline:none;
+  transition:.25s;
+}
+.xbj-search input:focus{border-color:var(--xbj-primary);box-shadow:0 0 0 3px rgba(194,65,12,.12);width:230px}
+.xbj-search-btn{
+  position:absolute;right:5px;width:30px;height:30px;border-radius:50%;
+  background:var(--xbj-primary);color:#fff;display:grid;place-items:center;font-size:14px;
+}
+.xbj-search-tip{
+  position:absolute;top:44px;left:0;right:0;background:#fff;border:1px solid var(--xbj-line);
+  border-radius:12px;box-shadow:var(--xbj-shadow);padding:8px 0;font-size:13px;
+  display:none;z-index:50;overflow:hidden;
+}
+.xbj-search-tip.xbj-open{display:block}
+.xbj-search-tip li{padding:7px 14px;cursor:pointer;color:var(--xbj-ink-soft)}
+.xbj-search-tip li:hover{background:var(--xbj-cream-2);color:var(--xbj-primary-deep)}
+.xbj-menu-toggle{
+  display:none;width:38px;height:38px;border-radius:10px;border:1px solid var(--xbj-line);
+  background:#fff;font-size:18px;color:var(--xbj-primary-deep);
+}
+@media(max-width:960px){
+  .xbj-nav{
+    display:none;position:absolute;top:100%;left:0;right:0;
+    background:#fff;flex-direction:column;padding:10px 16px 16px;gap:2px;
+    border-bottom:1px solid var(--xbj-line);box-shadow:var(--xbj-shadow);
+  }
+  .xbj-nav.xbj-nav-open{display:flex}
+  .xbj-menu-toggle{display:grid;place-items:center}
+  .xbj-search input{width:130px}
+  .xbj-search input:focus{width:150px}
+  .xbj-header-inner{position:relative}
+}
+
+/* ============ 通用容器 ============ */
+.xbj-wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.xbj-section{padding:64px 0}
+.xbj-section-tight{padding:44px 0}
+.xbj-sec-head{margin-bottom:32px}
+.xbj-eyebrow{
+  display:inline-block;font-size:12.5px;letter-spacing:2px;font-weight:700;
+  color:var(--xbj-primary);background:rgba(194,65,12,.09);
+  padding:3px 12px;border-radius:20px;margin-bottom:12px;
+}
+.xbj-sec-head h2{
+  font-size:29px;line-height:1.35;letter-spacing:.5px;color:var(--xbj-ink);
+}
+.xbj-sec-head p{color:var(--xbj-ink-soft);font-size:14.5px;margin-top:8px;max-width:740px}
+.xbj-btn{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:11px 22px;border-radius:24px;font-size:14.5px;font-weight:600;
+  background:var(--xbj-primary);color:#fff;transition:.22s;
+  box-shadow:0 6px 16px rgba(194,65,12,.28);
+}
+.xbj-btn:hover{background:var(--xbj-primary-deep);transform:translateY(-2px)}
+.xbj-btn-ghost{
+  background:transparent;color:var(--xbj-primary-deep);
+  border:1.5px solid rgba(194,65,12,.45);box-shadow:none;
+}
+.xbj-btn-ghost:hover{background:rgba(194,65,12,.08);color:var(--xbj-primary-deep);transform:translateY(-2px)}
+
+/* ============ 首屏 ============ */
+.xbj-hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 88% -10%,rgba(245,158,11,.22),transparent 60%),
+    radial-gradient(700px 400px at 4% 110%,rgba(194,65,12,.16),transparent 60%),
+    var(--xbj-cream);
+  padding:56px 0 64px;
+}
+.xbj-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.xbj-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+  background:#fff;border:1px solid var(--xbj-line);color:var(--xbj-primary-deep);
+  padding:5px 14px;border-radius:20px;box-shadow:var(--xbj-shadow);margin-bottom:18px;
+}
+.xbj-hero-badge i{width:7px;height:7px;border-radius:50%;background:#16a34a;display:inline-block}
+.xbj-hero h1{
+  font-size:46px;line-height:1.18;letter-spacing:1px;font-weight:800;color:var(--xbj-ink);
+}
+.xbj-hero h1 em{
+  font-style:normal;color:var(--xbj-primary);
+  background:linear-gradient(180deg,transparent 62%,rgba(245,158,11,.38) 62%);
+}
+.xbj-hero-sub{
+  font-size:16px;color:var(--xbj-ink-soft);margin-top:18px;max-width:540px;
+}
+.xbj-hero-sub strong{color:var(--xbj-primary-deep)}
+.xbj-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.xbj-hero-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px;
+}
+.xbj-stat{
+  background:#fff;border:1px solid var(--xbj-line);border-radius:14px;padding:14px 16px;
+  box-shadow:var(--xbj-shadow);
+}
+.xbj-stat b{display:block;font-size:24px;color:var(--xbj-primary-deep);letter-spacing:.5px}
+.xbj-stat span{font-size:12.5px;color:var(--xbj-ink-soft)}
+
+.xbj-hero-visual{position:relative}
+.xbj-hero-frame{
+  border-radius:22px;overflow:hidden;position:relative;
+  box-shadow:0 22px 48px rgba(120,72,20,.24);
+  border:1px solid rgba(255,255,255,.7);
+  aspect-ratio:16/11;
+  background:#f3e3cf;
+}
+.xbj-hero-frame img{width:100%;height:100%;object-fit:cover}
+.xbj-hero-frame .xbj-play-big{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+}
+.xbj-hero-frame .xbj-play-big span{
+  width:66px;height:66px;border-radius:50%;background:rgba(255,255,255,.92);
+  display:grid;place-items:center;color:var(--xbj-primary);font-size:24px;
+  box-shadow:0 8px 22px rgba(0,0,0,.22);
+}
+.xbj-hero-tag{
+  position:absolute;left:16px;bottom:16px;background:rgba(43,33,24,.72);
+  color:#fff;font-size:12.5px;padding:6px 12px;border-radius:8px;backdrop-filter:blur(4px);
+}
+.xbj-float-card{
+  position:absolute;right:-6px;top:-18px;background:#fff;border-radius:14px;
+  padding:12px 16px;box-shadow:0 14px 34px rgba(120,72,20,.22);
+  font-size:13px;border:1px solid var(--xbj-line);max-width:210px;
+}
+.xbj-float-card b{color:var(--xbj-primary-deep);display:block;font-size:14px;margin-bottom:3px}
+@media(max-width:960px){
+  .xbj-hero-grid{grid-template-columns:1fr;gap:34px}
+  .xbj-hero h1{font-size:34px}
+  .xbj-float-card{right:6px;top:-14px}
+}
+
+/* ============ 关键词解析长文 ============ */
+.xbj-about{
+  background:#fff;border-top:1px solid var(--xbj-line);border-bottom:1px solid var(--xbj-line);
+  position:relative;
+}
+.xbj-about-grid{display:grid;grid-template-columns:.32fr .68fr;gap:40px}
+.xbj-about-side{position:relative}
+.xbj-about-side h3{
+  font-size:21px;margin:10px 0 14px;color:var(--xbj-ink);
+}
+.xbj-about-side p{font-size:14px;color:var(--xbj-ink-soft)}
+.xbj-about-side .xbj-mini-list{margin-top:20px;display:flex;flex-direction:column;gap:10px}
+.xbj-about-side .xbj-mini-list li{
+  font-size:13.5px;display:flex;gap:9px;align-items:flex-start;color:var(--xbj-ink-soft);
+}
+.xbj-about-side .xbj-mini-list li::before{
+  content:"";width:8px;height:8px;border-radius:2px;background:var(--xbj-amber);
+  margin-top:8px;flex-shrink:0;transform:rotate(45deg);
+}
+.xbj-article p{font-size:15px;color:#493b2d;margin-bottom:16px;text-align:justify}
+.xbj-article h3{font-size:19px;margin:26px 0 10px;color:var(--xbj-primary-deep)}
+.xbj-article strong{color:var(--xbj-primary-deep)}
+@media(max-width:900px){.xbj-about-grid{grid-template-columns:1fr;gap:22px}}
+
+/* ============ 焦点内容 ============ */
+.xbj-focus-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px}
+.xbj-focus-main{
+  position:relative;border-radius:18px;overflow:hidden;background:#000;
+  box-shadow:var(--xbj-shadow);min-height:340px;
+}
+.xbj-focus-main img{width:100%;height:100%;object-fit:cover;min-height:340px}
+.xbj-focus-main .xbj-focus-caption{
+  position:absolute;inset:auto 0 0 0;padding:60px 22px 20px;
+  background:linear-gradient(180deg,transparent,rgba(20,12,4,.86));
+  color:#fff;
+}
+.xbj-focus-caption h3{font-size:21px;line-height:1.4}
+.xbj-focus-caption p{font-size:13.5px;opacity:.86;margin-top:6px}
+.xbj-focus-meta{
+  display:flex;gap:14px;font-size:12.5px;margin-top:10px;opacity:.9;flex-wrap:wrap;
+}
+.xbj-focus-side{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.xbj-mini-card{
+  background:#fff;border:1px solid var(--xbj-line);border-radius:14px;overflow:hidden;
+  transition:.24s;display:flex;flex-direction:column;
+}
+.xbj-mini-card:hover{transform:translateY(-4px);box-shadow:var(--xbj-shadow)}
+.xbj-mini-thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:#f3e3cf}
+.xbj-mini-thumb img{width:100%;height:100%;object-fit:cover}
+.xbj-mini-thumb .xbj-vbadge{
+  position:absolute;left:8px;top:8px;background:rgba(43,33,24,.72);color:#fff;
+  font-size:11px;padding:2px 8px;border-radius:6px;
+}
+.xbj-mini-card div.body{padding:11px 12px 13px}
+.xbj-mini-card h4{font-size:13.5px;line-height:1.45;color:var(--xbj-ink)}
+.xbj-mini-card small{font-size:11.5px;color:var(--xbj-ink-soft)}
+@media(max-width:860px){
+  .xbj-focus-grid{grid-template-columns:1fr}
+  .xbj-focus-side{grid-template-columns:1fr 1fr}
+}
+
+/* ============ 视频流 ============ */
+.xbj-video-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+}
+.xbj-video-card{
+  background:#fff;border:1px solid var(--xbj-line);border-radius:var(--xbj-radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.26s;position:relative;
+}
+.xbj-video-card:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(120,72,20,.16)}
+.xbj-video-cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#f3e3cf}
+.xbj-video-cover img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.xbj-video-card:hover .xbj-video-cover img{transform:scale(1.05)}
+.xbj-video-cover::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(20,12,4,.42));
+}
+.xbj-video-tag{
+  position:absolute;left:10px;top:10px;z-index:2;font-size:11.5px;
+  background:rgba(245,158,11,.95);color:#3b2405;font-weight:700;
+  padding:2px 9px;border-radius:6px;
+}
+.xbj-video-duration{
+  position:absolute;right:10px;bottom:10px;z-index:2;font-size:11.5px;
+  background:rgba(20,12,4,.72);color:#fff;padding:1px 7px;border-radius:5px;
+}
+.xbj-play-tri{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;
+  width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.9);
+  display:grid;place-items:center;color:var(--xbj-primary);font-size:17px;
+  opacity:.92;transition:.24s;
+}
+.xbj-video-card:hover .xbj-play-tri{transform:translate(-50%,-50%) scale(1.12);background:#fff}
+.xbj-video-body{padding:14px 15px 15px;display:flex;flex-direction:column;gap:8px;flex:1}
+.xbj-video-body h3{font-size:15.5px;line-height:1.5;color:var(--xbj-ink)}
+.xbj-video-desc{font-size:12.8px;color:var(--xbj-ink-soft);line-height:1.6;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.xbj-video-author{
+  display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--xbj-ink-soft);
+  margin-top:auto;padding-top:6px;border-top:1px dashed var(--xbj-line);
+}
+.xbj-avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;font-size:11.5px;font-weight:700;flex-shrink:0;
+}
+.xbj-video-foot{
+  display:flex;align-items:center;gap:6px;margin-top:8px;
+}
+.xbj-video-foot button{
+  font-size:12px;color:var(--xbj-ink-soft);display:inline-flex;align-items:center;gap:4px;
+  padding:3px 8px;border-radius:7px;transition:.2s;
+}
+.xbj-video-foot button:hover{background:var(--xbj-cream-2);color:var(--xbj-primary-deep)}
+.xbj-video-foot button.xbj-liked{color:var(--xbj-primary);font-weight:700}
+.xbj-video-foot button.xbj-collected{color:#d97706;font-weight:700}
+.xbj-foot-spacer{margin-left:auto}
+@media(max-width:900px){.xbj-video-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){.xbj-video-grid{grid-template-columns:1fr}}
+
+/* ============ 专题 ============ */
+.xbj-topic-wrap{background:linear-gradient(180deg,#fff,var(--xbj-cream-2));border-top:1px solid var(--xbj-line)}
+.xbj-topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.xbj-topic-card{
+  border-radius:16px;overflow:hidden;position:relative;aspect-ratio:3/4;
+  box-shadow:var(--xbj-shadow);color:#fff;display:flex;align-items:flex-end;
+}
+.xbj-topic-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.xbj-topic-card .xbj-topic-veil{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(20,12,4,0) 30%,rgba(20,12,4,.88));
+}
+.xbj-topic-info{position:relative;padding:18px;z-index:2;width:100%}
+.xbj-topic-info span{font-size:11.5px;background:rgba(245,158,11,.92);color:#3b2405;
+  font-weight:700;padding:2px 9px;border-radius:6px;display:inline-block;margin-bottom:8px}
+.xbj-topic-info h3{font-size:16px;line-height:1.4}
+.xbj-topic-info p{font-size:12px;opacity:.85;margin-top:5px}
+@media(max-width:900px){.xbj-topic-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.xbj-topic-grid{grid-template-columns:1fr}}
+
+/* ============ 创作者 ============ */
+.xbj-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.xbj-creator-card{
+  background:#fff;border:1px solid var(--xbj-line);border-radius:16px;padding:20px 18px;
+  text-align:center;transition:.26s;display:flex;flex-direction:column;align-items:center;
+}
+.xbj-creator-card:hover{transform:translateY(-5px);box-shadow:var(--xbj-shadow);border-color:rgba(194,65,12,.35)}
+.xbj-creator-avatar{
+  width:66px;height:66px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;font-size:22px;font-weight:800;margin-bottom:12px;
+  box-shadow:0 6px 16px rgba(120,72,20,.22);
+}
+.xbj-creator-card h3{font-size:15.5px;color:var(--xbj-ink)}
+.xbj-creator-card .role{font-size:12px;color:var(--xbj-primary);font-weight:600;margin:3px 0 8px}
+.xbj-creator-card p{font-size:12.5px;color:var(--xbj-ink-soft);line-height:1.6;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.xbj-creator-nums{
+  display:flex;gap:14px;margin-top:12px;font-size:12px;color:var(--xbj-ink-soft);
+}
+.xbj-creator-nums b{color:var(--xbj-primary-deep);display:block;font-size:14px}
+.xbj-creator-card .xbj-mini-btn{
+  margin-top:14px;font-size:12.5px;padding:6px 18px;border-radius:20px;
+  border:1px solid rgba(194,65,12,.4);color:var(--xbj-primary-deep);font-weight:600;transition:.2s;
+}
+.xbj-creator-card .xbj-mini-btn:hover{background:var(--xbj-primary);color:#fff;border-color:var(--xbj-primary)}
+@media(max-width:900px){.xbj-creator-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.xbj-creator-grid{grid-template-columns:1fr}}
+
+/* ============ 影像墙 ============ */
+.xbj-wall{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+.xbj-wall-item{
+  border-radius:12px;overflow:hidden;position:relative;background:#f3e3cf;
+  box-shadow:0 4px 14px rgba(120,72,20,.10);
+}
+.xbj-wall-item img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.xbj-wall-item:hover img{transform:scale(1.06)}
+.xbj-wall-item .cap{
+  position:absolute;inset:auto 0 0 0;padding:22px 10px 8px;font-size:11.5px;color:#fff;
+  background:linear-gradient(180deg,transparent,rgba(20,12,4,.82));
+}
+.xbj-w-a{grid-column:span 4;aspect-ratio:4/3}
+.xbj-w-b{grid-column:span 4;aspect-ratio:4/3}
+.xbj-w-c{grid-column:span 4;aspect-ratio:4/3}
+.xbj-w-d{grid-column:span 3;aspect-ratio:1/1}
+.xbj-w-e{grid-column:span 3;aspect-ratio:1/1}
+.xbj-w-f{grid-column:span 3;aspect-ratio:1/1}
+.xbj-w-g{grid-column:span 3;aspect-ratio:1/1}
+.xbj-w-h{grid-column:span 6;aspect-ratio:16/7}
+.xbj-w-i{grid-column:span 6;aspect-ratio:16/7}
+@media(max-width:760px){
+  .xbj-w-a,.xbj-w-b,.xbj-w-c{grid-column:span 6;aspect-ratio:4/3}
+  .xbj-w-d,.xbj-w-e,.xbj-w-f,.xbj-w-g{grid-column:span 6;aspect-ratio:1/1}
+  .xbj-w-h,.xbj-w-i{grid-column:span 12}
+}
+
+/* ============ 评价 ============ */
+.xbj-quote-wrap{background:#fff;border-top:1px solid var(--xbj-line);border-bottom:1px solid var(--xbj-line)}
+.xbj-quote-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+}
+.xbj-quote{
+  background:var(--xbj-cream);border:1px solid var(--xbj-line);border-radius:14px;
+  padding:18px 18px 16px;display:flex;flex-direction:column;gap:10px;position:relative;
+}
+.xbj-quote::before{
+  content:"“";position:absolute;right:16px;top:2px;font-size:52px;color:rgba(194,65,12,.14);
+  font-family:Georgia,serif;line-height:1;
+}
+.xbj-quote p{font-size:13.5px;color:#493b2d;line-height:1.7}
+.xbj-quote-author{display:flex;align-items:center;gap:9px;margin-top:auto}
+.xbj-quote-author b{font-size:13px;display:block;color:var(--xbj-ink)}
+.xbj-quote-author small{font-size:11.5px;color:var(--xbj-ink-soft)}
+@media(max-width:900px){.xbj-quote-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.xbj-quote-grid{grid-template-columns:1fr}}
+
+/* ============ 动态 + FAQ ============ */
+.xbj-two-col{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.xbj-news-list{display:flex;flex-direction:column;gap:0}
+.xbj-news-item{
+  display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed var(--xbj-line);align-items:flex-start;
+}
+.xbj-news-date{
+  flex-shrink:0;width:56px;text-align:center;background:#fff;border:1px solid var(--xbj-line);
+  border-radius:10px;padding:6px 0;
+}
+.xbj-news-date b{display:block;font-size:16px;color:var(--xbj-primary-deep);line-height:1.1}
+.xbj-news-date span{font-size:10.5px;color:var(--xbj-ink-soft)}
+.xbj-news-item h4{font-size:14.5px;color:var(--xbj-ink)}
+.xbj-news-item p{font-size:12.5px;color:var(--xbj-ink-soft);margin-top:3px}
+.xbj-news-item a{font-size:12px;color:var(--xbj-primary);font-weight:600}
+
+.xbj-faq-list{display:flex;flex-direction:column;gap:10px}
+.xbj-faq-item{
+  background:#fff;border:1px solid var(--xbj-line);border-radius:12px;overflow:hidden;
+}
+.xbj-faq-item summary{
+  list-style:none;cursor:pointer;padding:14px 44px 14px 16px;font-size:14px;font-weight:600;
+  position:relative;color:var(--xbj-ink);
+}
+.xbj-faq-item summary::-webkit-details-marker{display:none}
+.xbj-faq-item summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  font-size:19px;color:var(--xbj-primary);transition:.2s;font-weight:400;
+}
+.xbj-faq-item[open] summary::after{content:"−"}
+.xbj-faq-item[open] summary{color:var(--xbj-primary-deep)}
+.xbj-faq-item .answer{
+  padding:0 16px 15px;font-size:13.5px;color:var(--xbj-ink-soft);line-height:1.75;
+}
+@media(max-width:860px){.xbj-two-col{grid-template-columns:1fr;gap:30px}}
+
+/* ============ 联系 / 投稿 ============ */
+.xbj-cta{
+  background:
+    radial-gradient(700px 300px at 15% 20%,rgba(245,158,11,.28),transparent 60%),
+    linear-gradient(120deg,var(--xbj-primary-deep),var(--xbj-primary) 60%,#d97706);
+  color:#fff7ed;border-radius:22px;padding:44px 40px;
+  display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;
+  box-shadow:0 20px 44px rgba(154,52,18,.28);
+}
+.xbj-cta h2{font-size:26px;line-height:1.4;color:#fff}
+.xbj-cta p{font-size:14px;opacity:.9;margin-top:10px}
+.xbj-cta-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.xbj-cta .xbj-btn{background:#fff;color:var(--xbj-primary-deep);box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.xbj-cta .xbj-btn:hover{background:#fff7ed}
+.xbj-cta .xbj-btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6);box-shadow:none}
+.xbj-cta .xbj-btn-ghost:hover{background:rgba(255,255,255,.14)}
+.xbj-cta-info{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);
+  border-radius:16px;padding:20px;font-size:13px;line-height:2}
+.xbj-cta-info b{display:block;font-size:15px;margin-bottom:6px;color:#fff}
+@media(max-width:840px){.xbj-cta{grid-template-columns:1fr;padding:32px 24px}}
+
+/* ============ 页脚 ============ */
+.xbj-footer{background:#241a11;color:#c9bba9;margin-top:64px;padding:56px 0 24px;font-size:13.5px}
+.xbj-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+.xbj-footer h4{color:#fde8c8;font-size:14px;margin-bottom:14px;letter-spacing:.5px}
+.xbj-footer .brand-line{display:flex;align-items:center;gap:10px;color:#fde8c8;font-weight:800;font-size:18px;margin-bottom:12px}
+.xbj-footer p{font-size:12.8px;line-height:1.9;color:#b3a390}
+.xbj-footer ul{display:flex;flex-direction:column;gap:9px}
+.xbj-footer ul a{font-size:12.8px;color:#b3a390;transition:.2s}
+.xbj-footer ul a:hover{color:var(--xbj-amber)}
+.xbj-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);margin-top:36px;padding-top:18px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12px;color:#8f8272;
+}
+@media(max-width:860px){.xbj-footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.xbj-footer-grid{grid-template-columns:1fr}}
+
+/* ============ 回到顶部 ============ */
+.xbj-to-top{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:var(--xbj-primary);color:#fff;display:grid;place-items:center;font-size:18px;
+  box-shadow:0 10px 24px rgba(194,65,12,.4);opacity:0;pointer-events:none;transition:.28s;z-index:100;
+}
+.xbj-to-top.xbj-show{opacity:1;pointer-events:auto}
+.xbj-to-top:hover{background:var(--xbj-primary-deep);transform:translateY(-3px)}
+
+/* ============ Toast ============ */
+.xbj-toast{
+  position:fixed;left:50%;bottom:80px;transform:translate(-50%,20px);
+  background:rgba(43,33,24,.94);color:#fff;font-size:13.5px;padding:10px 22px;border-radius:24px;
+  opacity:0;pointer-events:none;transition:.28s;z-index:300;box-shadow:0 10px 28px rgba(0,0,0,.25);
+}
+.xbj-toast.xbj-show{opacity:1;transform:translate(-50%,0)}
+
+/* ============ 弹窗 ============ */
+.xbj-modal{
+  position:fixed;inset:0;background:rgba(24,16,8,.55);display:none;place-items:center;
+  z-index:250;padding:20px;
+}
+.xbj-modal.xbj-open{display:grid}
+.xbj-modal-box{
+  background:#fff;border-radius:18px;max-width:460px;width:100%;padding:26px 24px;
+  box-shadow:0 24px 60px rgba(0,0,0,.35);position:relative;
+}
+.xbj-modal-box h3{font-size:19px;color:var(--xbj-primary-deep);margin-bottom:8px}
+.xbj-modal-box p{font-size:13.5px;color:var(--xbj-ink-soft);line-height:1.8}
+.xbj-modal-box .xbj-modal-close{
+  position:absolute;right:14px;top:12px;font-size:20px;color:var(--xbj-ink-soft);
+}
+.xbj-modal-field{margin-top:14px}
+.xbj-modal-field label{font-size:12.5px;color:var(--xbj-ink-soft);display:block;margin-bottom:5px}
+.xbj-modal-field input,.xbj-modal-field textarea{
+  width:100%;border:1px solid var(--xbj-line);border-radius:10px;padding:9px 12px;
+  font-size:13.5px;font-family:inherit;outline:none;transition:.2s;background:var(--xbj-cream);
+}
+.xbj-modal-field input:focus,.xbj-modal-field textarea:focus{border-color:var(--xbj-primary);background:#fff}
+.xbj-modal-btn{
+  margin-top:18px;width:100%;padding:11px;border-radius:22px;background:var(--xbj-primary);
+  color:#fff;font-size:14px;font-weight:700;transition:.2s;
+}
+.xbj-modal-btn:hover{background:var(--xbj-primary-deep)}
+
+/* 锚点偏移 */
+section[id]{scroll-margin-top:118px}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ======= 吸顶：公告 + 页头 ======= -->
+<div class="xbj-sticky-head">
+  <div class="xbj-notice-bar">
+    <span class="xbj-notice-tag">官方发布</span>
+    <div class="xbj-notice-marquee">
+      新增「探花视野 · 城市夜行记」第 6 期已上线；创作者招募季报名开启；影像挑战赛「一城一季」投稿通道开放中。
+    </div>
+  </div>
+  <header class="xbj-header">
+    <div class="xbj-header-inner">
+      <a class="xbj-logo" href="#xbj-home">
+        <span class="xbj-logo-mark">▶</span>
+        <span>杏吧鸠摩智探花视频</span>
+      </a>
+      <nav class="xbj-nav" id="xbjMainNav" aria-label="主导航">
+        <a href="#xbj-home" class="xbj-nav-active">首页</a>
+        <a href="#xbj-about">品牌解析</a>
+        <a href="#xbj-focus">焦点内容</a>
+        <a href="#xbj-videos">热门影像</a>
+        <a href="#xbj-topics">专题企划</a>
+        <a href="#xbj-creators">创作者</a>
+        <a href="#xbj-wall">影像墙</a>
+        <a href="#xbj-news">企业动态</a>
+        <a href="#xbj-contact">联系投稿</a>
+      </nav>
+      <div class="xbj-head-actions">
+        <div class="xbj-search">
+          <input type="text" id="xbjSearchInput" placeholder="搜索影像、创作者、专题" autocomplete="off" aria-label="站内搜索">
+          <button class="xbj-search-btn" id="xbjSearchBtn" aria-label="搜索">🔍</button>
+          <ul class="xbj-search-tip" id="xbjSearchTip"></ul>
+        </div>
+        <button class="xbj-menu-toggle" id="xbjMenuToggle" aria-label="展开导航" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+
+<!-- ======= 首屏 ======= -->
+<section class="xbj-hero" id="xbj-home">
+  <div class="xbj-wrap">
+    <div class="xbj-hero-grid">
+      <div>
+        <span class="xbj-hero-badge"><i></i>官方网站 · 持续运营中</span>
+        <h1>杏吧鸠摩智探花视频<em>影像品牌官网</em></h1>
+        <p class="xbj-hero-sub">
+          作为国内专注城市纪实与新锐影像的<strong>视频品牌</strong>，我们以原创内容为根基，以创作者社区为土壤，
+          用镜头记录真实、温暖与力量，为观众与企业搭建高品质、值得信赖的<strong>内容生态</strong>。
+        </p>
+        <div class="xbj-hero-actions">
+          <a class="xbj-btn" href="#xbj-videos">进入热门影像</a>
+          <a class="xbj-btn xbj-btn-ghost" href="#xbj-contact">我要投稿</a>
+          <a class="xbj-btn xbj-btn-ghost" href="#xbj-about">品牌解析</a>
+        </div>
+        <div class="xbj-hero-stats">
+          <div class="xbj-stat"><b>2,860+</b><span>原创影像作品</span></div>
+          <div class="xbj-stat"><b>1,240位</b><span>入驻创作者</span></div>
+          <div class="xbj-stat"><b>4,300万</b><span>累计播放人次</span></div>
+        </div>
+      </div>
+      <div class="xbj-hero-visual">
+        <div class="xbj-float-card">
+          <b>本周焦点企划</b>
+          探花视野 · 城市夜行记 第 6 期 · 已更新
+        </div>
+        <div class="xbj-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23231205'/%3E%3Cstop offset='0.55' stop-color='%23c2410c'/%3E%3Cstop offset='1' stop-color='%23f59e0b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23g1)'/%3E%3Ccircle cx='640' cy='120' r='70' fill='%23fde68a' opacity='0.85'/%3E%3Cg fill='%23231205' opacity='0.83'%3E%3Crect x='0' y='330' width='90' height='220'/%3E%3Crect x='100' y='270' width='70' height='280'/%3E%3Crect x='180' y='380' width='60' height='170'/%3E%3Crect x='255' y='230' width='95' height='320'/%3E%3Crect x='365' y='320' width='70' height='230'/%3E%3Crect x='450' y='200' width='80' height='350'/%3E%3Crect x='545' y='350' width='65' height='200'/%3E%3Crect x='625' y='260' width='90' height='290'/%3E%3Crect x='730' y='300' width='70' height='250'/%3E%3C/g%3E%3Cg fill='%23fde68a' opacity='0.9'%3E%3Crect x='115' y='300' width='12' height='16'/%3E%3Crect x='140' y='300' width='12' height='16'/%3E%3Crect x='275' y='270' width='12' height='16'/%3E%3Crect x='305' y='270' width='12' height='16'/%3E%3Crect x='275' y='320' width='12' height='16'/%3E%3Crect x='470' y='240' width='12' height='16'/%3E%3Crect x='500' y='240' width='12' height='16'/%3E%3Crect x='470' y='290' width='12' height='16'/%3E%3Crect x='650' y='300' width='12' height='16'/%3E%3Crect x='680' y='300' width='12' height='16'/%3E%3C/g%3E%3Cg stroke='%23fbbf24' stroke-width='3' opacity='0.55' fill='none'%3E%3Cpath d='M0 0 L800 550'/%3E%3Cpath d='M0 90 L800 640'/%3E%3C/g%3E%3C/svg%3E" alt="杏吧鸠摩智探花视频品牌首屏：夜色城市天际线与金色灯光">
+          <div class="xbj-play-big"><span>▶</span></div>
+          <div class="xbj-hero-tag">探花视野 · 城市夜行记 · 4K 高清</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 品牌解析长文（含关键词） ======= -->
+<section class="xbj-section xbj-about" id="xbj-about">
+  <div class="xbj-wrap">
+    <div class="xbj-about-grid">
+      <div class="xbj-about-side">
+        <span class="xbj-eyebrow">品牌解析</span>
+        <h3>关于杏吧鸠摩智探花视频</h3>
+        <p>一个以城市纪实与真实故事为核心的视频品牌官网，服务观众、创作者与合作伙伴。</p>
+        <ul class="xbj-mini-list">
+          <li>原创优先：所有精品内容均来自合作创作者原创拍摄</li>
+          <li>高清品质：主推作品统一 4K 制作、正版授权</li>
+          <li>社区驱动：创作者与观众共同参与选题与投票</li>
+          <li>持续运营：每周更新，赛事与企划常年不断</li>
+        </ul>
+      </div>
+      <div class="xbj-article">
+        <p>
+          <strong>杏吧鸠摩智探花视频</strong>是一家以影像叙事为核心、持续运营的内容品牌企业。自创立以来，团队坚持“真实、温暖、有力量”的内容主张，
+          深耕城市纪实、人物访谈、生活方式与在地文化等垂直领域，逐渐形成具备辨识度的原创影像体系。
+          作为一个面向公众的品牌官网，我们不仅发布精品内容，也记录品牌故事、企业动态与创作者成长轨迹，
+          希望让每一位观众都能在这里找到与自己生活相关的表达。
+        </p>
+        <h3>一、品牌定位：城市里的观察者与记录者</h3>
+        <p>
+          “探花”一词在我们的语境里，指向对生活细节的敏感觉察与耐心探访。我们把镜头对准清晨的早点摊、深夜的便利店、旧街区的老手艺人和新开的独立书店，
+          用纪实的方式记录城市呼吸的节奏。<strong>杏吧鸠摩智探花视频</strong>不做浮光掠影的打卡式拍摄，
+          而是愿意为一个三分钟的故事花上三天时间，去等待真实的情绪和自然的对话。
+          这种匠心式的取材方式，构成了我们区别于同类平台的核心品质，也让我们在观众中积累了稳定口碑。
+        </p>
+        <h3>二、内容生态：创作者、观众与企业三方共建</h3>
+        <p>
+          我们认为，优质内容生态不是单向输出，而是一个多方参与的过程。平台为入驻创作者提供选题支持、拍摄器材对接、剪辑思路交流与正版素材服务，
+          同时通过专题企划、影像挑战赛与投票机制，让观众参与内容走向的筛选。
+          企业客户则可以通过官方合作通道参与品牌故事共创，把商业表达融入真实叙事之中。
+          在这样的结构下，<strong>杏吧鸠摩智探花视频</strong>既是内容发布平台，也是创作者成长的社群，更是企业讲好自身故事的长期伙伴。
+        </p>
+        <h3>三、品质标准：从拍摄到上线的完整流程</h3>
+        <p>
+          每一部进入首页推荐的精品内容，都需要经过选题评审、素材质检、声音处理、色彩统一与字幕规范五个环节。
+          我们坚持统一的技术标准：画面为高清及以上规格，声音清晰，字幕与画面严格对位，避免使用未经授权的素材。
+          对于涉及人物出镜的内容，我们要求取得当事人同意，并在必要处进行信息模糊处理。
+          这套流程看似繁琐，却正是<strong>杏吧鸠摩智探花视频</strong>能够被用户视为“值得信赖”的原因。
+          我们相信，尊重真实与尊重版权，是内容行业最基础的底线。
+        </p>
+        <h3>四、社区温度：让每一个普通人被看见</h3>
+        <p>
+          在平台的投稿区里，每天都有新人上传自己的第一支短片。有人拍外婆的菜园，有人记录通勤路上的地铁站台，也有人用三个月跟拍一间小面馆的日常。
+          这些视频未必精致，却带着鲜活的生活质感。我们为新人设置了推荐位与成长计划，也组织线下交流活动，
+          让创作者之间能够彼此陪伴、共同成长。<strong>杏吧鸠摩智探花视频</strong>始终相信，
+          真正的影响力不来自流量数字，而来自作品是否让某个陌生人感到被理解。
+        </p>
+        <h3>五、未来方向：开放、多元、持续创新</h3>
+        <p>
+          面向未来，我们将继续拓展内容边界：一方面加强与高校、社区文化机构与独立影像团队的协作，推动更多元的题材进入公众视野；
+          另一方面优化产品体验，完善搜索、收藏、投稿与互动模块，让浏览与创作都更顺畅。
+          作为<strong>杏吧鸠摩智探花视频</strong>的官方网站，本页会持续更新官方发布信息、赛事报名入口与内容生态报告，
+          欢迎每一位对影像抱有热情的朋友加入我们，一起把真实的故事讲得更远。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 焦点内容 ======= -->
+<section class="xbj-section" id="xbj-focus">
+  <div class="xbj-wrap">
+    <div class="xbj-sec-head">
+      <span class="xbj-eyebrow">焦点推荐</span>
+      <h2>本期焦点影像与编辑精选</h2>
+      <p>由编辑部与创作者共同推选的精品内容，覆盖城市纪实、人物访谈与生活记录多个方向。</p>
+    </div>
+    <div class="xbj-focus-grid">
+      <div class="xbj-focus-main">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230f172a'/%3E%3Cstop offset='0.6' stop-color='%231e3a8a'/%3E%3Cstop offset='1' stop-color='%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='600' fill='url(%23f1)'/%3E%3Cg stroke='%23bae6fd' stroke-width='2' opacity='0.35'%3E%3Cpath d='M0 480 Q220 400 460 470 T900 430' fill='none'/%3E%3Cpath d='M0 520 Q220 440 460 510 T900 470' fill='none'/%3E%3Cpath d='M0 560 Q220 480 460 550 T900 510' fill='none'/%3E%3C/g%3E%3Ccircle cx='700' cy='150' r='58' fill='%23e0f2fe' opacity='0.9'/%3E%3Cg fill='%23e0f2fe' opacity='0.92'%3E%3Crect x='120' y='300' width='14' height='260'/%3E%3Crect x='170' y='250' width='14' height='310'/%3E%3Crect x='220' y='340' width='14' height='220'/%3E%3Crect x='270' y='220' width='14' height='340'/%3E%3C/g%3E%3Cg stroke='%23fbbf24' stroke-width='4' fill='none' opacity='0.85'%3E%3Cpath d='M380 400 L470 300 L560 400'/%3E%3Cpath d='M470 300 L470 520'/%3E%3C/g%3E%3Cg fill='%23fbbf24' opacity='0.65'%3E%3Crect x='620' y='380' width='14' height='180'/%3E%3Crect x='660' y='320' width='14' height='240'/%3E%3Crect x='700' y='420' width='14' height='140'/%3E%3Crect x='740' y='360' width='14' height='200'/%3E%3Crect x='780' y='440' width='14' height='120'/%3E%3C/g%3E%3C/svg%3E" alt="焦点影像：深夜江畔的城市灯光与行人剪影">
+        <div class="xbj-focus-caption">
+          <h3>探花视野 · 城市夜行记 第 6 期：沿江十二公里</h3>
+          <p>跟着镜头走完一段滨江步道，听三个夜归人讲述他们的城市与深夜。</p>
+          <div class="xbj-focus-meta">
+            <span>作者：夜行纪录片组</span>
+            <span>时长 18:42</span>
+            <span>4K 高清</span>
+            <span>本周热度第 1</span>
+          </div>
+        </div>
+      </div>
+      <div class="xbj-focus-side">
+        <a class="xbj-mini-card" href="#xbj-videos">
+          <div class="xbj-mini-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23fef3c7'/%3E%3Ccircle cx='360' cy='80' r='48' fill='%23f59e0b'/%3E%3Cpath d='M0 220 Q120 150 240 210 T480 190 L480 300 L0 300 Z' fill='%23b45309' opacity='0.85'/%3E%3Cpath d='M0 250 Q120 190 240 245 T480 235 L480 300 L0 300 Z' fill='%2378350f' opacity='0.9'/%3E%3Crect x='40' y='120' width='8' height='100' fill='%23451a03'/%3E%3Ccircle cx='44' cy='112' r='22' fill='%2315803d' opacity='0.8'/%3E%3C/svg%3E" alt="山脊上的落日与远行者">
+            <span class="xbj-vbadge">纪实</span>
+          </div>
+          <div class="body">
+            <h4>山脊上的最后一个黄昏</h4>
+            <small>徒步记录 · 12:06</small>
+          </div>
+        </a>
+        <a class="xbj-mini-card" href="#xbj-videos">
+          <div class="xbj-mini-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23e0e7ff'/%3E%3Crect x='40' y='60' width='400' height='180' rx='10' fill='%23312e81' opacity='0.9'/%3E%3Cg fill='%23c7d2fe'%3E%3Crect x='70' y='95' width='120' height='12' rx='6'/%3E%3Crect x='70' y='125' width='200' height='12' rx='6'/%3E%3Crect x='70' y='155' width='150' height='12' rx='6'/%3E%3Crect x='70' y='185' width='90' height='12' rx='6'/%3E%3C/g%3E%3Ccircle cx='380' cy='90' r='18' fill='%23fbbf24'/%3E%3C/svg%3E" alt="访谈画面中的字幕排版与人物剪影">
+            <span class="xbj-vbadge">访谈</span>
+          </div>
+          <div class="body">
+            <h4>和一位置景师聊了三个小时</h4>
+            <small>人物访谈 · 26:30</small>
+          </div>
+        </a>
+        <a class="xbj-mini-card" href="#xbj-videos">
+          <div class="xbj-mini-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23dcfce7'/%3E%3Cg fill='%23166534' opacity='0.85'%3E%3Cpath d='M120 260 L160 120 L200 260 Z'/%3E%3Cpath d='M200 260 L240 150 L280 260 Z'/%3E%3Cpath d='M280 260 L320 100 L360 260 Z'/%3E%3C/g%3E%3Ccircle cx='400' cy='70' r='34' fill='%23fde68a'/%3E%3Crect x='0' y='250' width='480' height='50' fill='%2314532d'/%3E%3C/svg%3E" alt="林间小路上的自然光与树干剪影">
+            <span class="xbj-vbadge">生活</span>
+          </div>
+          <div class="body">
+            <h4>把周末交给一片林地</h4>
+            <small>日常记录 · 09:15</small>
+          </div>
+        </a>
+        <a class="xbj-mini-card" href="#xbj-videos">
+          <div class="xbj-mini-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23ffe4e6'/%3E%3Cg fill='%239f1239' opacity='0.8'%3E%3Crect x='40' y='170' width='400' height='14' rx='7'/%3E%3Crect x='90' y='200' width='300' height='14' rx='7'/%3E%3Crect x='140' y='230' width='200' height='14' rx='7'/%3E%3C/g%3E%3Ccircle cx='120' cy='90' r='40' fill='%23fb7185'/%3E%3Ccircle cx='340' cy='100' r='26' fill='%23fda4af'/%3E%3C/svg%3E" alt="手作工作室里的色板与桌面">
+            <span class="xbj-vbadge">手作</span>
+          </div>
+          <div class="body">
+            <h4>一块布的三次试验</h4>
+            <small>创作幕后 · 07:48</small>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 热门视频流 ======= -->
+<section class="xbj-section" id="xbj-videos" style="background:#fff;border-top:1px solid var(--xbj-line);border-bottom:1px solid var(--xbj-line)">
+  <div class="xbj-wrap">
+    <div class="xbj-sec-head">
+      <span class="xbj-eyebrow">热门影像</span>
+      <h2>社区正在观看的精品内容</h2>
+      <p>每一部作品都经过品质初审，点击卡片可查看简介、作者与互动操作。</p>
+    </div>
+    <div class="xbj-video-grid" id="xbjVideoGrid">
+
+      <article class="xbj-video-card">
+        <div class="xbj-video-cover">
+          <span class="xbj-video-tag">城市探索</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%230f172a'/%3E%3Cg fill='%231e293b'%3E%3Crect x='30' y='180' width='80' height='180'/%3E%3Crect x='130' y='130' width='60' height='230'/%3E%3Crect x='210' y='200' width='70' height='160'/%3E%3Crect x='300' y='110' width='90' height='250'/%3E%3Crect x='410' y='170' width='70' height='190'/%3E%3Crect x='500' y='140' width='90' height='220'/%3E%3C/g%3E%3Cg fill='%23fbbf24' opacity='0.9'%3E%3Crect x='145' y='150' width='10' height='12'/%3E%3Crect x='170' y='150' width='10' height='12'/%3E%3Crect x='145' y='180' width='10' height='12'/%3E%3Crect x='320' y='140' width='10' height='12'/%3E%3Crect x='350' y='140' width='10' height='12'/%3E%3Crect x='320' y='175' width='10' height='12'/%3E%3Crect x='520' y='170' width='10' height='12'/%3E%3Crect x='550' y='170' width='10' height='12'/%3E%3C/g%3E%3Ccircle cx='560' cy='70' r='34' fill='%23e2e8f0' opacity='0.85'/%3E%3C/svg%3E" alt="城市夜景航拍：高楼与暖色灯带">
+          <span class="xbj-duration">14:22</span>
+          <span class="xbj-play-tri">▶</span>
+        </div>
+        <div class="xbj-video-body">
+          <h3>城市探索：从天台看一条街的四十年</h3>
+          <p class="xbj-video-desc">老街区改造前的最后一次俯瞰，采访了三位在这里生活超过三十年的居民。</p>
+          <div class="xbj-video-author">
+            <span class="xbj-avatar" style="background:#c2410c">陈</span>
+            <span>陈屿影像 · 城市纪实</span>
+          </div>
+          <div class="xbj-video-foot">
+            <button class="xbj-like-btn" data-count="1286">👍 <span>1286</span></button>
+            <button class="xbj-collect-btn">☆ 收藏</button>
+            <button class="xbj-share-btn">↗ 分享</button>
+            <span class="xbj-foot-spacer"></span>
+            <button class="xbj-copy-btn">🔗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="xbj-video-card">
+        <div class="xbj-video-cover">
+          <span class="xbj-video-tag">人物访谈</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23fef2f2'/%3E%3Crect x='0' y='250' width='640' height='110' fill='%23fecaca'/%3E%3Ccircle cx='200' cy='160' r='70' fill='%23dc2626' opacity='0.85'/%3E%3Ccircle cx='200' cy='120' r='28' fill='%23fecaca'/%3E%3Cpath d='M130 260 Q200 190 270 260 Z' fill='%23991b1b' opacity='0.9'/%3E%3Crect x='360' y='120' width='200' height='12' rx='6' fill='%23b91c1c' opacity='0.5'/%3E%3Crect x='360' y='155' width='150' height='12' rx='6' fill='%23b91c1c' opacity='0.4'/%3E%3Crect x='360' y='190' width='180' height='12' rx='6' fill='%23b91c1c' opacity='0.3'/%3E%3C/svg%3E" alt="访谈现场：暖红背景中的分享者">
+          <span class="xbj-duration">31:08</span>
+          <span class="xbj-play-tri">▶</span>
+        </div>
+        <div class="xbj-video-body">
+          <h3>做了十年独立书店，他说最难的是坚持选书</h3>
+          <p class="xbj-video-desc">一场没有提词器的长谈，聊库存、聊读者、聊一间小店如何与社区一起长大。</p>
+          <div class="xbj-video-author">
+            <span class="xbj-avatar" style="background:#9f1239">林</span>
+            <span>林深对话 · 人物访谈</span>
+          </div>
+          <div class="xbj-video-foot">
+            <button class="xbj-like-btn" data-count="964">👍 <span>964</span></button>
+            <button class="xbj-collect-btn">☆ 收藏</button>
+            <button class="xbj-share-btn">↗ 分享</button>
+            <span class="xbj-foot-spacer"></span>
+            <button class="xbj-copy-btn">🔗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="xbj-video-card">
+        <div class="xbj-video-cover">
+          <span class="xbj-video-tag">日常记录</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23ecfdf5'/%3E%3Crect x='0' y='240' width='640' height='120' fill='%23a7f3d0'/%3E%3Cg fill='%23065f46' opacity='0.85'%3E%3Cpath d='M80 300 L110 140 L140 300 Z'/%3E%3Cpath d='M200 300 L230 160 L260 300 Z'/%3E%3Cpath d='M320 300 L350 120 L380 300 Z'/%3E%3Cpath d='M440 300 L470 170 L500 300 Z'/%3E%3C/g%3E%3Crect x='180' y='190' width='240' height='10' rx='5' fill='%23047857'/%3E%3Ccircle cx='560' cy='80' r='30' fill='%23fde68a'/%3E%3C/svg%3E" alt="清晨菜市场：摊位与自然光">
+          <span class="xbj-duration">08:47</span>
+          <span class="xbj-play-tri">▶</span>
+        </div>
+        <div class="xbj-video-body">
+          <h3>六点半的菜市场，比咖啡馆清醒</h3>
+          <p class="xbj-video-desc">用一支短片记录早市的节奏，摊主的吆喝、水汽和新鲜蔬菜的颜色。</p>
+          <div class="xbj-video-author">
+            <span class="xbj-avatar" style="background:#047857">周</span>
+            <span>周日清晨 · 生活记录</span>
+          </div>
+          <div class="xbj-video-foot">
+            <button class="xbj-like-btn" data-count="1520">👍 <span>1520</span></button>
+            <button class="xbj-collect-btn">☆ 收藏</button>
+            <button class="xbj-share-btn">↗ 分享</button>
+            <span class="xbj-foot-spacer"></span>
+            <button class="xbj-copy-btn">🔗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="xbj-video-card">
+        <div class="xbj-video-cover">
+          <span class="xbj-video-tag">创作幕后</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f5f3ff'/%3E%3Crect x='60' y='70' width='520' height='220' rx='14' fill='%23312e81' opacity='0.9'/%3E%3Cg fill='%23c4b5fd'%3E%3Crect x='100' y='110' width='200' height='12' rx='6'/%3E%3Crect x='100' y='145' width='320' height='12' rx='6'/%3E%3Crect x='100' y='180' width='260' height='12' rx='6'/%3E%3Crect x='100' y='215' width='160' height='12' rx='6'/%3E%3C/g%3E%3Ccircle cx='520' cy='110' r='26' fill='%23a78bfa'/%3E%3C/svg%3E" alt="剪辑台界面：时间线与素材轨道">
+          <span class="xbj-duration">11:36</span>
+          <span class="xbj-play-tri">▶</span>
+        </div>
+        <div class="xbj-video-body">
+          <h3>从 4 小时素材到 8 分钟成片：我的剪辑思路</h3>
+          <p class="xbj-video-desc">一次完整拆解，讲清叙事顺序、节奏控制和镜头取舍的判断依据。</p>
+          <div class="xbj-video-author">
+            <span class="xbj-avatar" style="background:#5b21b6">许</span>
+            <span>许影工作台 · 创作幕后</span>
+          </div>
+          <div class="xbj-video-foot">
+            <button class="xbj-like-btn" data-count="733">👍 <span>733</span></button>
+            <button class="xbj-collect-btn">☆ 收藏</button>
+            <button class="xbj-share-btn">↗ 分享</button>
+            <span class="xbj-foot-spacer"></span>
+            <button class="xbj-copy-btn">🔗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="xbj-video-card">
+        <div class="xbj-video-cover">
+          <span class="xbj-video-tag">教程干货</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23fff7ed'/%3E%3Crect x='70' y='60' width='220' height='240' rx='10' fill='%23c2410c' opacity='0.85'/%3E%3Crect x='350' y='60' width='220' height='240' rx='10' fill='%23f59e0b' opacity='0.85'/%3E%3Cg fill='%23fff7ed'%3E%3Crect x='100' y='100' width='120' height='10' rx='5'/%3E%3Crect x='100' y='130' width='160' height='10' rx='5'/%3E%3Crect x='380' y='100' width='120' height='10' rx='5'/%3E%3Crect x='380' y='130' width='150' height='10' rx='5'/%3E%3C/g%3E%3Ccircle cx='320' cy='180' r='34' fill='%231f2937'/%3E%3Cpath d='M310 165 L335 180 L310 195 Z' fill='%23fff7ed'/%3E%3C/svg%3E" alt="教程对比画面：两种调色风格并列">
+          <span class="xbj-duration">16:05</span>
+          <span class="xbj-play-tri">▶</span>
+        </div>
+        <div class="xbj-video-body">
+          <h3>三种调色方向，让同一段素材讲三种故事</h3>
+          <p class="xbj-video-desc">示例全覆盖：暖调、冷调与低饱和，附带参数与适配方，可直接套用。</p>
+          <div class="xbj-video-author">
+            <span class="xbj-avatar" style="background:#b45309">何</span>
+            <span>何工教室 · 实用技巧</span>
+          </div>
+          <div class="xbj-video-foot">
+            <button class="xbj-like-btn" data-count="2104">👍 <span>2104</span></button>
+            <button class="xbj-collect-btn">☆ 收藏</button>
+            <button class="xbj-share-btn">↗ 分享</button>
+            <span class="xbj-foot-spacer"></span>
+            <button class="xbj-copy-btn">🔗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="xbj-video-card">
+        <div class="xbj-video-cover">
+          <span class="xbj-video-tag">在地文化</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23fef9c3'/%3E%3Cg fill='%23ca8a04' opacity='0.85'%3E%3Crect x='40' y='200' width='560' height='20' rx='10'/%3E%3Crect x='90' y='240' width='460' height='20' rx='10'/%3E%3Crect x='140' y='280' width='360' height='20' rx='10'/%3E%3C/g%3E%3Ccircle cx='160' cy='110' r='44' fill='%23ef4444' opacity='0.8'/%3E%3Ccircle cx='320' cy='90' r='34' fill='%233b82f6' opacity='0.8'/%3E%3Ccircle cx='470' cy='120' r='40' fill='%2316a34a' opacity='0.8'/%3E%3C/svg%3E" alt="传统工艺记录：街道与手作色彩">
+          <span class="xbj-duration">20:14</span>
+          <span class="xbj-play-tri">▶</span>
+        </div>
+        <div class="xbj-video-body">
+          <h3>会做这门手艺的人，只剩下四个了</h3>
+          <p class="xbj-video-desc">走访三位手艺人，记录一门老技艺的工序、坚持与它正在面临的现实。</p>
+          <div class="xbj-video-author">
+            <span class="xbj-avatar" style="background:#a16207">苏</span>
+            <span>苏氏影像志 · 在地文化</span>
+          </div>
+          <div class="xbj-video-foot">
+            <button class="xbj-like-btn" data-count="1811">👍 <span>1811</span></button>
+            <button class="xbj-collect-btn">☆ 收藏</button>
+            <button class="xbj-share-btn">↗ 分享</button>
+            <span class="xbj-foot-spacer"></span>
+            <button class="xbj-copy-btn">🔗</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= 专题企划 ======= -->
+<section class="xbj-section xbj-topic-wrap" id="xbj-topics">
+  <div class="xbj-wrap">
+    <div class="xbj-sec-head">
+      <span class="xbj-eyebrow">专题企划</span>
+      <h2>正在进行的四个长期企划</h2>
+      <p>由官方发起，创作者参与，观众投票共同决定内容走向。</p>
+    </div>
+    <div class="xbj-topic-grid">
+      <a class="xbj-topic-card" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 533'%3E%3Crect width='400' height='533' fill='%230f172a'/%3E%3Ccircle cx='200' cy='170' r='90' fill='%23f59e0b' opacity='0.9'/%3E%3Cg fill='%230f172a'%3E%3Crect x='80' y='300' width='60' height='233'/%3E%3Crect x='170' y='260' width='60' height='273'/%3E%3Crect x='260' y='330' width='60' height='203'/%3E%3C/g%3E%3Cg fill='%23fbbf24' opacity='0.85'%3E%3Crect x='92' y='330' width='10' height='12'/%3E%3Crect x='116' y='330' width='10' height='12'/%3E%3Crect x='182' y='290' width='10' height='12'/%3E%3Crect x='206' y='290' width='10' height='12'/%3E%3Crect x='272' y='360' width='10' height='12'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：城市夜行记的夜色楼宇">
+        <div class="xbj-topic-veil"></div>
+        <div class="xbj-topic-info">
+          <span>更新至 6 期</span>
+          <h3>探花视野 · 城市夜行记</h3>
+          <p>沿着城市的夜走，记录灯光下的人与事。</p>
+        </div>
+      </a>
+      <a class="xbj-topic-card" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 533'%3E%3Crect width='400' height='533' fill='%23f0fdf4'/%3E%3Cg fill='%2315803d' opacity='0.8'%3E%3Cpath d='M40 460 Q120 300 200 400 T360 380 L360 533 L40 533 Z'/%3E%3Cpath d='M40 500 Q120 380 200 460 T360 450 L360 533 L40 533 Z' opacity='0.7'/%3E%3C/g%3E%3Ccircle cx='290' cy='130' r='60' fill='%23fbbf24' opacity='0.9'/%3E%3Cg stroke='%23166534' stroke-width='6' fill='none' opacity='0.6'%3E%3Cpath d='M70 300 Q140 240 220 290'/%3E%3Cpath d='M100 350 Q170 290 250 340'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：山林间的周末光景">
+        <div class="xbj-topic-veil"></div>
+        <div class="xbj-topic-info">
+          <span>招募中</span>
+          <h3>一城一季 影像挑战赛</h3>
+          <p>用一支短片回答：你所在的季节是什么颜色。</p>
+        </div>
+      </a>
+      <a class="xbj-topic-card" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 533'%3E%3Crect width='400' height='533' fill='%23fdf2f8'/%3E%3Crect x='60' y='120' width='280' height='280' rx='16' fill='%23831843' opacity='0.85'/%3E%3Cg fill='%23fbcfe8'%3E%3Crect x='90' y='160' width='140' height='12' rx='6'/%3E%3Crect x='90' y='195' width='200' height='12' rx='6'/%3E%3Crect x='90' y='230' width='160' height='12' rx='6'/%3E%3C/g%3E%3Ccircle cx='300' cy='330' r='34' fill='%23fbbf24'/%3E%3C/svg%3E" alt="专题封面：访谈节目的话筒与背景">
+        <div class="xbj-topic-veil"></div>
+        <div class="xbj-topic-info">
+          <span>连载中</span>
+          <h3>小人物 · 大日常</h3>
+          <p>十位普通人，十段不需要滤镜的人生。</p>
+        </div>
+      </a>
+      <a class="xbj-topic-card" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 533'%3E%3Crect width='400' height='533' fill='%23eff6ff'/%3E%3Cg fill='%231d4ed8' opacity='0.8'%3E%3Crect x='50' y='300' width='300' height='160' rx='12'/%3E%3C/g%3E%3Cg fill='%2393c5fd'%3E%3Crect x='80' y='120' width='60' height='60' rx='8'/%3E%3Crect x='170' y='90' width='60' height='90' rx='8'/%3E%3Crect x='260' y='140' width='60' height='40' rx='8'/%3E%3C/g%3E%3Cpath d='M150 380 L250 380 L200 440 Z' fill='%23fbbf24'/%3E%3C/svg%3E" alt="专题封面：剪辑软件与素材方块">
+        <div class="xbj-topic-veil"></div>
+        <div class="xbj-topic-info">
+          <span>开放投稿</span>
+          <h3>新人成长计划</h3>
+          <p>从第一支短片开始，平台陪你把作品做完。</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 创作者矩阵 ======= -->
+<section class="xbj-section" id="xbj-creators">
+  <div class="xbj-wrap">
+    <div class="xbj-sec-head">
+      <span class="xbj-eyebrow">创作者矩阵</span>
+      <h2>值得关注的影像作者</h2>
+      <p>四位长期合作的创作者，覆盖纪实、访谈、生活与教学方向。</p>
+    </div>
+    <div class="xbj-creator-grid">
+      <div class="xbj-creator-card">
+        <div class="xbj-creator-avatar" style="background:linear-gradient(135deg,#c2410c,#f59e0b)">陈</div>
+        <h3>陈屿影像</h3>
+        <div class="role">城市纪实 · 航拍</div>
+        <p>用航拍与地面镜头交叉记录城市变迁，擅长从日常生活里找出结构感。</p>
+        <div class="xbj-creator-nums">
+          <span><b>86</b>作品</span>
+          <span><b>12.4万</b>关注</span>
+        </div>
+        <button class="xbj-mini-btn xbj-author-btn" data-name="陈屿影像" data-info="城市纪实创作者，代表企划《探花视野 · 城市夜行记》，作品累计播放超过 800 万次。">查看资料</button>
+      </div>
+      <div class="xbj-creator-card">
+        <div class="xbj-creator-avatar" style="background:linear-gradient(135deg,#9f1239,#fb7185)">林</div>
+        <h3>林深对话</h3>
+        <div class="role">人物访谈 · 长谈</div>
+        <p>坚持无提词器长谈，用两个小时换一句真话，镜头克制而耐心。</p>
+        <div class="xbj-creator-nums">
+          <span><b>54</b>作品</span>
+          <span><b>9.8万</b>关注</span>
+        </div>
+        <button class="xbj-mini-btn xbj-author-btn" data-name="林深对话" data-info="访谈类创作者，专注普通人故事与职业叙事，代表作《小人物 · 大日常》连载中。">查看资料</button>
+      </div>
+      <div class="xbj-creator-card">
+        <div class="xbj-creator-avatar" style="background:linear-gradient(135deg,#047857,#34d399)">周</div>
+        <h3>周日清晨</h3>
+        <div class="role">生活记录 · 治愈</div>
+        <p>拍菜市场、拍早餐、拍楼下的猫，擅长把平淡日子拍出呼吸感。</p>
+        <div class="xbj-creator-nums">
+          <span><b>112</b>作品</span>
+          <span><b>15.6万</b>关注</span>
+        </div>
+        <button class="xbj-mini-btn xbj-author-btn" data-name="周日清晨" data-info="生活记录创作者，主张不打扰的拍摄方式，所有素材均取得当事人同意后发布。">查看资料</button>
+      </div>
+      <div class="xbj-creator-card">
+        <div class="xbj-creator-avatar" style="background:linear-gradient(135deg,#5b21b6,#a78bfa)">许</div>
+        <h3>许影工作台</h3>
+        <div class="role">创作幕后 · 教程</div>
+        <p>把复杂的技术拆成能立即上手的步骤，是新人最常参考的实操类作者。</p>
+        <div class="xbj-creator-nums">
+          <span><b>73</b>作品</span>
+          <span><b>11.2万</b>关注</span>
+        </div>
+        <button class="xbj-mini-btn xbj-author-btn" data-name="许影工作台" data-info="后期与拍摄教学创作者，课程内容覆盖剪辑结构、调色规范与声音处理三个模块。">查看资料</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 影像墙 ======= -->
+<section class="xbj-section xbj-quote-wrap" id="xbj-wall">
+  <div class="xbj-wrap">
+    <div class="xbj-sec-head">
+      <span class="xbj-eyebrow">作品墙</span>
+      <h2>社区影像墙：这一季的九个瞬间</h2>
+      <p>来自不同创作者的上传作品，题材多元，风格各异。</p>
+    </div>
+    <div class="xbj-wall">
+      <a class="xbj-wall-item xbj-w-a" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23fff7ed'/%3E%3Ccircle cx='300' cy='80' r='46' fill='%23fbbf24'/%3E%3Cpath d='M0 220 Q100 160 200 210 T400 190 L400 300 L0 300 Z' fill='%23c2410c' opacity='0.85'/%3E%3Cpath d='M0 255 Q100 200 200 250 T400 240 L400 300 L0 300 Z' fill='%2378350f'/%3E%3C/svg%3E" alt="影像墙作品：稻田边的落日与远山">
+        <span class="cap">稻田边的落日 · 周日清晨</span>
+      </a>
+      <a class="xbj-wall-item xbj-w-b" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23eff6ff'/%3E%3Cg fill='%231d4ed8' opacity='0.75'%3E%3Crect x='40' y='60' width='30' height='200'/%3E%3Crect x='100' y='30' width='30' height='230'/%3E%3Crect x='160' y='90' width='30' height='170'/%3E%3C/g%3E%3Cg fill='%23f59e0b' opacity='0.85'%3E%3Ccircle cx='300' cy='100' r='34'/%3E%3C/g%3E%3Crect x='240' y='150' width='120' height='110' fill='%2393c5fd'/%3E%3C/svg%3E" alt="影像墙作品：街角的彩色墙面与窗户">
+        <span class="cap">街角配色 · 陈屿影像</span>
+      </a>
+      <a class="xbj-wall-item xbj-w-c" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23fdf2f8'/%3E%3Crect x='50' y='80' width='300' height='160' rx='12' fill='%239d174d' opacity='0.85'/%3E%3Cg fill='%23fbcfe8'%3E%3Crect x='80' y='115' width='160' height='10' rx='5'/%3E%3Crect x='80' y='145' width='220' height='10' rx='5'/%3E%3Crect x='80' y='175' width='120' height='10' rx='5'/%3E%3C/g%3E%3Ccircle cx='330' cy='70' r='24' fill='%23fbbf24'/%3E%3C/svg%3E" alt="影像墙作品：访谈字幕与暖粉色背景">
+        <span class="cap">长谈现场 · 林深对话</span>
+      </a>
+      <a class="xbj-wall-item xbj-w-d" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ecfdf5'/%3E%3Cg fill='%23047857' opacity='0.85'%3E%3Cpath d='M60 260 L95 90 L130 260 Z'/%3E%3Cpath d='M150 260 L185 120 L220 260 Z'/%3E%3C/g%3E%3Ccircle cx='240' cy='70' r='26' fill='%23fbbf24'/%3E%3Crect x='0' y='250' width='300' height='50' fill='%2314532d'/%3E%3C/svg%3E" alt="影像墙作品：林间小径与树影">
+        <span class="cap">林间散步 · 许影工作台</span>
+      </a>
+      <a class="xbj-wall-item xbj-w-e" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23312e81'/%3E%3Cg stroke='%23c4b5fd' stroke-width='3' opacity='0.7' fill='none'%3E%3Cpath d='M0 60 L300 200'/%3E%3Cpath d='M0 140 L300 280'/%3E%3C/g%3E%3Ccircle cx='210' cy='90' r='38' fill='%23fbbf24'/%3E%3Crect x='30' y='150' width='80' height='120' fill='%234c1d95' opacity='0.9'/%3E%3C/svg%3E" alt="影像墙作品：夜间剪辑室的屏幕光">
+        <span class="cap">深夜剪辑 · 何工教室</span>
+      </a>
+      <a class="xbj-wall-item xbj-w-f" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23fef9c3'/%3E%3Cg fill='%23ca8a04' opacity='0.8'%3E%3Crect x='30' y='120' width='240' height='16' rx='8'/%3E%3Crect x='60' y='160' width='180' height='16' rx='8'/%3E%3Crect x='90' y='200' width='120' height='16' rx='8'/%3E%3C/g%3E%3Ccircle cx='80' cy='60' r='28' fill='%23ef4444' opacity='0.8'/%3E%3Ccircle cx='210' cy='60' r='22' fill='%233b82f6' opacity='0.8'/%3E%3C/svg%3E" alt="影像墙作品：传统手工艺记录画面">
+        <span class="cap">手艺现场 · 苏氏影像志</span>
+      </a>
+      <a class="xbj-wall-item xbj-w-g" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23f3e8ff'/%3E%3Crect x='40' y='90' width='220' height='150' rx='10' fill='%236b21a1' opacity='0.85'/%3E%3Cg fill='%23e9d5ff'%3E%3Crect x='65' y='120' width='120' height='10' rx='5'/%3E%3Crect x='65' y='150' width='160' height='10' rx='5'/%3E%3C/g%3E%3Ccircle cx='240' cy='70' r='24' fill='%23fbbf24'/%3E%3C/svg%3E" alt="影像墙作品：手作工作台的色布与工具">
+        <span class="cap">一块布 · 手作频道</span>
+      </a>
+      <a class="xbj-wall-item xbj-w-h" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 260'%3E%3Crect width='600' height='260' fill='%230f172a'/%3E%3Cg fill='%231e293b'%3E%3Crect x='20' y='120' width='70' height='140'/%3E%3Crect x='110' y='80' width='50' height='180'/%3E%3Crect x='180' y='140' width='70' height='120'/%3E%3Crect x='270' y='60' width='80' height='200'/%3E%3Crect x='370' y='130' width='60' height='130'/%3E%3Crect x='450' y='100' width='70' height='160'/%3E%3Crect x='540' y='150' width='50' height='110'/%3E%3C/g%3E%3Cg fill='%23fbbf24' opacity='0.9'%3E%3Crect x='125' y='100' width='8' height='10'/%3E%3Crect x='145' y='100' width='8' height='10'/%3E%3Crect x='290' y='85' width='8' height='10'/%3E%3Crect x='310' y='85' width='8' height='10'/%3E%3Crect x='465' y='125' width='8' height='10'/%3E%3Crect x='485' y='125' width='8' height='10'/%3E%3C/g%3E%3Ccircle cx='530' cy='50' r='28' fill='%23e2e8f0' opacity='0.85'/%3E%3C/svg%3E" alt="影像墙作品：宽幅城市夜景天际线">
+        <span class="cap">宽幅城市 · 城市夜行记</span>
+      </a>
+      <a class="xbj-wall-item xbj-w-i" href="#xbj-videos">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 260'%3E%3Crect width='600' height='260' fill='%23fffbeb'/%3E%3Cg fill='%23b45309' opacity='0.8'%3E%3Crect x='30' y='150' width='540' height='18' rx='9'/%3E%3Crect x='80' y='190' width='440' height='18' rx='9'/%3E%3C/g%3E%3Ccircle cx='120' cy='80' r='40' fill='%23f59e0b'/%3E%3Ccircle cx='300' cy='60' r='26' fill='%23fbbf24'/%3E%3Ccircle cx='470' cy='90' r='34' fill='%23d97706'/%3E%3C/svg%3E" alt="影像墙作品：宽幅暖色桌面与手稿">
+        <span class="cap">手稿与咖啡 · 创作幕后</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 用户评价 ======= -->
+<section class="xbj-section">
+  <div class="xbj-wrap">
+    <div class="xbj-sec-head">
+      <span class="xbj-eyebrow">口碑</span>
+      <h2>来自观众与创作者的真实反馈</h2>
+      <p>我们把这些评价当作产品改进的坐标，也当作品牌口碑的长期积累。</p>
+    </div>
+    <div class="xbj-quote-grid">
+      <div class="xbj-quote">
+        <p>追了《城市夜行记》三期，最喜欢的是镜头从不着急，愿意等一个路人走过去再切。这种耐心在现在很少见。</p>
+        <div class="xbj-quote-author">
+          <span class="xbj-avatar" style="background:#c2410c">阿</span>
+          <div><b>阿岚</b><small>观众 · 关注 1 年</small></div>
+        </div>
+      </div>
+      <div class="xbj-quote">
+        <p>作为新人投稿，第一次收到编辑的逐条修改意见，很具体，包括片头时长和第 40 秒的收音问题，感觉被认真对待。</p>
+        <div class="xbj-quote-author">
+          <span class="xbj-avatar" style="background:#5b21b6">小</span>
+          <div><b>小满不看海</b><small>创作者 · 新人计划第 4 期</small></div>
+        </div>
+      </div>
+      <div class="xbj-quote">
+        <p>对比了三家做城市记录的团队，最终选这里，是因为他们愿意先听我们的需求，再谈拍摄方案，流程也很规范。</p>
+        <div class="xbj-quote-author">
+          <span class="xbj-avatar" style="background:#047857">合</span>
+          <div><b>某文创品牌市场部</b><small>企业合作方</small></div>
+        </div>
+      </div>
+      <div class="xbj-quote">
+        <p>调色教程那一期我反复看了四五遍，参数直接照着调，成片质感提升明显。希望多做这种能直接上手的干货。</p>
+        <div class="xbj-quote-author">
+          <span class="xbj-avatar" style="background:#b45309">镜</span>
+          <div><b>镜头不说话</b><small>创作者 · 关注 2 年</small></div>
+        </div>
+      </div>
+      <div class="xbj-quote">
+        <p>APP 之外，官网的信息也很完整，品牌故事、动态、投稿方式都写得很清楚，这点比很多平台做得扎实。</p>
+        <div class="xbj-quote-author">
+          <span class="xbj-avatar" style="background:#1d4ed8">林</span>
+          <div><b>林漫</b><small>观众 · 摄影爱好者</small></div>
+        </div>
+      </div>
+      <div class="xbj-quote">
+        <p>投稿之后第三天就收到了回复，说明了为什么这一期没有排上，还建议我换个切口再拍。虽然是拒绝，但很有诚意。</p>
+        <div class="xbj-quote-author">
+          <span class="xbj-avatar" style="background:#9f1239">南</span>
+          <div><b>南风慢</b><small>创作者 · 定期投稿</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 动态 + FAQ ======= -->
+<section class="xbj-section" id="xbj-news" style="background:#fff;border-top:1px solid var(--xbj-line);border-bottom:1px solid var(--xbj-line)">
+  <div class="xbj-wrap">
+    <div class="xbj-two-col">
+      <div>
+        <div class="xbj-sec-head" style="margin-bottom:18px">
+          <span class="xbj-eyebrow">企业动态</span>
+          <h2>官方发布与更新日志</h2>
+        </div>
+        <div class="xbj-news-list">
+          <div class="xbj-news-item">
+            <div class="xbj-news-date"><b>18</b><span>11月</span></div>
+            <div>
+              <h4>《探花视野 · 城市夜行记》第 6 期上线</h4>
+              <p>本周焦点企划更新，沿江十二公里完整记录，含三位夜归人的访谈片段。</p>
+              <a href="#xbj-focus">查看本期内容 →</a>
+            </div>
+          </div>
+          <div class="xbj-news-item">
+            <div class="xbj-news-date"><b>14</b><span>11月</span></div>
+            <div>
+              <h4>「一城一季」影像挑战赛报名通道开放</h4>
+              <p>面向全部创作者，主题为季节与城市，提交截止至下月中旬，评审结果将在官方页面公示。</p>
+              <a href="#xbj-contact">进入报名入口 →</a>
+            </div>
+          </div>
+          <div class="xbj-news-item">
+            <div class="xbj-news-date"><b>09</b><span>11月</span></div>
+            <div>
+              <h4>内容品质规范 2.1 版正式执行</h4>
+              <p>新增收音标准与字幕对位要求，同步上线创作者自查清单，降低返工成本。</p>
+              <a href="#xbj-about">了解规范要点 →</a>
+            </div>
+          </div>
+          <div class="xbj-news-item">
+            <div class="xbj-news-date"><b>02</b><span>11月</span></div>
+            <div>
+              <h4>新人成长计划第 4 期结营</h4>
+              <p>本期共 86 位创作者完成短片，其中 12 部入选首页推荐位，作品数据持续更新中。</p>
+              <a href="#xbj-creators">认识本期作者 →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="xbj-sec-head" style="margin-bottom:18px">
+          <span class="xbj-eyebrow">帮助中心</span>
+          <h2>常见问题</h2>
+        </div>
+        <div class="xbj-faq-list">
+          <details class="xbj-faq-item" open>
+            <summary>如何向杏吧鸠摩智探花视频投稿？</summary>
+            <div class="answer">可通过页面底部的联系投稿入口提交作品信息，注明标题、时长、素材来源与授权情况。编辑部通常在三个工作日内回复，无论是否采用都会说明原因。</div>
+          </details>
+          <details class="xbj-faq-item">
+            <summary>平台对作品的画质和声音有硬性要求吗？</summary>
+            <div class="answer">进入首页推荐的精品内容需满足高清画质、声音清晰、字幕对位三项基础标准。新人投稿不必一次达标，我们会给出具体的修改建议。</div>
+          </details>
+          <details class="xbj-faq-item">
+            <summary>创作者可以同时参与多个专题企划吗？</summary>
+            <div class="answer">可以。专题之间时间安排若冲突，建议优先保证已承诺的交付节点，其余企划可顺延参与，避免影响作品质量与更新节奏。</div>
+          </details>
+          <details class="xbj-faq-item">
+            <summary>企业合作可以定制品牌故事内容吗？</summary>
+            <div class="answer">可以。我们会对企业需求进行前置沟通，结合真实场景设计叙事结构，所有内容仍遵循真实的拍摄原则，不做虚构摆拍。</div>
+          </details>
+          <details class="xbj-faq-item">
+            <summary>作品发布后可以修改或下架吗？</summary>
+            <div class="answer">可在作品管理页提交修改申请。涉及肖像或版权问题的，请通过联系入口提交说明，我们会在核实后第一时间处理。</div>
+          </details>
+          <details class="xbj-faq-item">
+            <summary>平台如何处理素材授权与版权问题？</summary>
+            <div class="answer">所有上线内容需提供素材来源说明，音乐与字体需为可商用授权。若收到有效版权异议，我们会先行下线并配合核查。</div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 联系 / 投稿 ======= -->
+<section class="xbj-section" id="xbj-contact">
+  <div class="xbj-wrap">
+    <div class="xbj-cta">
+      <div>
+        <h2>把你的故事交给镜头，<br>也交给愿意认真看的人</h2>
+        <p>投稿、合作、赛事报名与投诉建议，均通过官方入口受理。我们坚持用户至上的处理原则，所有来信都会有人工回复。</p>
+        <div class="xbj-cta-actions">
+          <button class="xbj-btn" id="xbjOpenSubmit">立即投稿</button>
+          <button class="xbj-btn xbj-btn-ghost" id="xbjOpenCopy">复制本站链接</button>
+        </div>
+      </div>
+      <div class="xbj-cta-info">
+        <b>官方联系方式</b>
+        合作邮箱：brand@xingba-tanhua.example<br>
+        投稿邮箱：create@xingba-tanhua.example<br>
+        工作时间：周一至周五 10:00–19:00<br>
+        办公地址：城市影像中心 3 层 · 品牌内容部
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======= 页脚 ======= -->
+<footer class="xbj-footer">
+  <div class="xbj-wrap">
+    <div class="xbj-footer-grid">
+      <div>
+        <div class="brand-line"><span class="xbj-logo-mark" style="width:30px;height:30px;font-size:13px">▶</span>杏吧鸠摩智探花视频</div>
+        <p>杏吧鸠摩智探花视频官方网站。深耕城市纪实与新锐影像的垂直领域，坚持原创、正版与高清的内容标准，与创作者、企业共同构建值得信赖的内容生态。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#xbj-focus">焦点内容</a></li>
+          <li><a href="#xbj-videos">热门影像</a></li>
+          <li><a href="#xbj-topics">专题企划</a></li>
+          <li><a href="#xbj-wall">社区影像墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#xbj-about">品牌解析</a></li>
+          <li><a href="#xbj-creators">创作者矩阵</a></li>
+          <li><a href="#xbj-news">企业动态</a></li>
+          <li><a href="#xbj-contact">联系与投稿</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与方式</h4>
+        <ul>
+          <li><a href="#xbj-contact">作品投稿</a></li>
+          <li><a href="#xbj-contact">赛事报名</a></li>
+          <li><a href="#xbj-news">更新日志</a></li>
+          <li><a href="#xbj-about">内容规范</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="xbj-footer-bottom">
+      <span>© 2026 杏吧鸠摩智探花视频 官方网站 · 版权所有 · 持续运营中</span>
+      <span>品牌备案：XB-TANHUA-2026 · 内容生态报告每季度更新</span>
+    </div>
+  </div>
+</footer>
+
+<button class="xbj-to-top" id="xbjToTop" aria-label="回到顶部">↑</button>
+<div class="xbj-toast" id="xbjToast"></div>
+
+<!-- 投稿弹窗 -->
+<div class="xbj-modal" id="xbjSubmitModal">
+  <div class="xbj-modal-box">
+    <button class="xbj-modal-close" data-close="1" aria-label="关闭">×</button>
+    <h3>作品投稿登记</h3>
+    <p>填写基础信息后提交，编辑部将在三个工作日内回复。请确保素材来源清晰、授权完整。</p>
+    <div class="xbj-modal-field">
+      <label>作品标题</label>
+      <input type="text" id="xbjSubTitle" placeholder="例如：六点半的菜市场">
+    </div>
+    <div class="xbj-modal-field">
+      <label>联系方式</label>
+      <input type="text" id="xbjSubContact" placeholder="邮箱或手机号">
+    </div>
+    <div class="xbj-modal-field">
+      <label>作品简介</label>
+      <textarea rows="3" id="xbjSubDesc" placeholder="简单描述题材、拍摄周期与授权情况"></textarea>
+    </div>
+    <button class="xbj-modal-btn" id="xbjSubmitConfirm">提交投稿</button>
+  </div>
+</div>
+
+<!-- 作者信息弹窗 -->
+<div class="xbj-modal" id="xbjAuthorModal">
+  <div class="xbj-modal-box">
+    <button class="xbj-modal-close" data-close="1" aria-label="关闭">×</button>
+    <h3 id="xbjAuthorName">创作者资料</h3>
+    <p id="xbjAuthorInfo"></p>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toast = document.getElementById("xbjToast");
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add("xbj-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove("xbj-show"); }, 2200);
+  }
+
+  /* ---- 移动端导航折叠 ---- */
+  var navToggle = document.getElementById("xbjMenuToggle");
+  var mainNav = document.getElementById("xbjMainNav");
+  navToggle.addEventListener("click", function(){
+    var open = mainNav.classList.toggle("xbj-nav-open");
+    navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    navToggle.textContent = open ? "×" : "☰";
+  });
+  mainNav.addEventListener("click", function(e){
+    if(e.target.tagName === "A"){
+      mainNav.classList.remove("xbj-nav-open");
+      navToggle.textContent = "☰";
+      navToggle.setAttribute("aria-expanded","false");
+    }
+  });
+
+  /* ---- 搜索提示 ---- */
+  var searchInput = document.getElementById("xbjSearchInput");
+  var searchTip = document.getElementById("xbjSearchTip");
+  var searchBtn = document.getElementById("xbjSearchBtn");
+  var searchData = [
+    "城市夜行记","人物访谈","剪辑思路","调色技巧","菜市场记录",
+    "在地手艺","新人成长计划","一城一季挑战赛","林深对话","陈屿影像"
+  ];
+  function renderTip(kw){
+    var list = searchData.filter(function(item){
+      return kw === "" || item.indexOf(kw) > -1;
+    }).slice(0,6);
+    if(list.length === 0){
+      list = ["暂无匹配内容，试试「城市」「访谈」"];
+    }
+    searchTip.innerHTML = "";
+    list.forEach(function(item){
+      var li = document.createElement("li");
+      li.textContent = item;
+      li.addEventListener("click", function(){
+        searchInput.value = item;
+        searchTip.classList.remove("xbj-open");
+        showToast("已为你定位相关内容：" + item);
+      });
+      searchTip.appendChild(li);
+    });
+    searchTip.classList.add("xbj-open");
+  }
+  searchInput.addEventListener("input", function(){
+    renderTip(searchInput.value.trim());
+  });
+  searchInput.addEventListener("focus", function(){
+    renderTip(searchInput.value.trim());
+  });
+  searchBtn.addEventListener("click", function(){
+    var kw = searchInput.value.trim();
+    showToast(kw ? "正在筛选：" + kw : "请输入关键词后再搜索");
+    searchTip.classList.remove("xbj-open");
+  });
+  document.addEventListener("click", function(e){
+    if(!e.target.closest(".xbj-search")){
+      searchTip.classList.remove("xbj-open");
+    }
+  });
+
+  /* ---- 点赞 / 收藏 / 分享 / 复制 ---- */
+  document.querySelectorAll(".xbj-like-btn").forEach(function(btn){
+    var span = btn.querySelector("span");
+    var base = parseInt(btn.getAttribute("data-count"), 10) || 0;
+    btn.addEventListener("click", function(){
+      if(btn.classList.contains("xbj-liked")){
+        btn.classList.remove("xbj-liked");
+        span.textContent = base;
+      }else{
+        btn.classList.add("xbj-liked");
+        span.textContent = base + 1;
+        showToast("已点赞，感谢你的支持");
+      }
+    });
+  });
+
+  document.querySelectorAll(".xbj-collect-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var on = btn.classList.toggle("xbj-collected");
+      btn.textContent = on ? "★ 已收藏" : "☆ 收藏";
+      showToast(on ? "已加入收藏夹" : "已取消收藏");
+    });
+  });
+
+  document.querySelectorAll(".xbj-share-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      showToast("分享链接已准备好，可发送至微信或微博");
+    });
+  });
+
+  function copyLink(){
+    var url = "https://xingba-tanhua.example/";
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){
+        showToast("链接已复制到剪贴板");
+      }).catch(function(){
+        showToast("复制失败，请手动选择地址");
+      });
+    }else{
+      showToast("当前环境不支持自动复制");
+    }
+  }
+  document.querySelectorAll(".xbj-copy-btn").forEach(function(btn){
+    btn.addEventListener("click", copyLink);
+  });
+  var openCopy = document.getElementById("xbjOpenCopy");
+  if(openCopy){ openCopy.addEventListener("click", copyLink); }
+
+  /* ---- 弹窗通用 ---- */
+  function openModal(el){ el.classList.add("xbj-open"); }
+  function closeModal(el){ el.classList.remove("xbj-open"); }
+  document.querySelectorAll(".xbj-modal").forEach(function(m){
+    m.addEventListener("click", function(e){
+      if(e.target === m || e.target.hasAttribute("data-close")){
+        closeModal(m);
+      }
+    });
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){
+      document.querySelectorAll(".xbj-modal.xbj-open").forEach(closeModal);
+    }
+  });
+
+  /* ---- 投稿弹窗 ---- */
+  var submitModal = document.getElementById("xbjSubmitModal");
+  var openSubmit = document.getElementById("xbjOpenSubmit");
+  if(openSubmit){
+    openSubmit.addEventListener("click", function(){ openModal(submitModal); });
+  }
+  var submitConfirm = document.getElementById("xbjSubmitConfirm");
+  if(submitConfirm){
+    submitConfirm.addEventListener("click", function(){
+      var t = document.getElementById("xbjSubTitle").value.trim();
+      var c = document.getElementById("xbjSubContact").value.trim();
+      if(!t || !c){
+        showToast("请填写作品标题与联系方式");
+        return;
+      }
+      closeModal(submitModal);
+      document.getElementById("xbjSubTitle").value = "";
+      document.getElementById("xbjSubContact").value = "";
+      document.getElementById("xbjSubDesc").value = "";
+      showToast("投稿信息已提交，编辑部会尽快回复");
+    });
+  }
+
+  /* ---- 作者资料弹窗 ---- */
+  var authorModal = document.getElementById("xbjAuthorModal");
+  var authorName = document.getElementById("xbjAuthorName");
+  var authorInfo = document.getElementById("xbjAuthorInfo");
+  document.querySelectorAll(".xbj-author-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      authorName.textContent = btn.getAttribute("data-name") || "创作者资料";
+      authorInfo.textContent = btn.getAttribute("data-info") || "";
+      openModal(authorModal);
+    });
+  });
+
+  /* ---- 回到顶部 ---- */
+  var toTop = document.getElementById("xbjToTop");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 500){
+      toTop.classList.add("xbj-show");
+    }else{
+      toTop.classList.remove("xbj-show");
+    }
+  });
+  toTop.addEventListener("click", function(){
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  /* ---- 导航高亮 ---- */
+  var sections = ["xbj-home","xbj-about","xbj-focus","xbj-videos","xbj-topics","xbj-creators","xbj-wall","xbj-news","xbj-contact"];
+  var navLinks = document.querySelectorAll(".xbj-nav a");
+  window.addEventListener("scroll", function(){
+    var pos = window.scrollY + 160;
+    var current = sections[0];
+    sections.forEach(function(id){
+      var el = document.getElementById(id);
+      if(el && el.offsetTop <= pos){ current = id; }
+    });
+    navLinks.forEach(function(a){
+      a.classList.toggle("xbj-nav-active", a.getAttribute("href") === "#" + current);
+    });
+  });
+})();
+</script>
+
+</body>
+          </html>
